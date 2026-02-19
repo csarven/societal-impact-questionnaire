@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en" dir="ltr"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 35.6.0">
+<meta name="generator" content="ReSpec 35.6.1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 span.example-title{text-transform:none}
@@ -79,13 +79,14 @@ dd{margin-left:0}
 
 
 <meta name="color-scheme" content="light">
-<meta name="revision" content="70e4f6ea75f23e032f8b3292232094e501b2f9d3">
+<meta name="revision" content="75de164cf1b55411a698cd39b47b9dd9d9a6694d">
 <meta name="description" content="The web should be a platform that helps people and provides a net positive
 social benefit. As we continue to evolve the web platform, we must consider
 the consequences of our work. This document sets out questions for
 specification authors, reviewers, and implementors of new web platform
 technologies to answer as part of a critical assessment of the impact of their
 work.">
+<link rel="canonical" href="https://www.w3.org/TR/societal-impact-questionnaire/">
 <style>
 var:hover{text-decoration:underline;cursor:pointer}
 var.respec-hl{color:var(--color,#000);background-color:var(--bg-color);box-shadow:0 0 0 2px var(--bg-color)}
@@ -114,6 +115,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "specStatus": "ED",
   "shortName": "societal-impact-questionnaire",
   "edDraftURI": "https://w3ctag.github.io/societal-impact-questionnaire/",
+  "canonicalURI": "TR",
   "editors": [
     {
       "name": "Sarven Capadisli",
@@ -147,15 +149,15 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "wgPublicList": "www-tag",
   "github": "w3ctag/societal-impact-questionnaire",
   "format": "markdown",
-  "gitRevision": "70e4f6ea75f23e032f8b3292232094e501b2f9d3",
-  "publishISODate": "2025-11-04T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 04 November 2025"
+  "gitRevision": "75de164cf1b55411a698cd39b47b9dd9d9a6694d",
+  "publishISODate": "2026-02-19T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 19 February 2026"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head><body class="informative h-entry"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Self-Review Questionnaire: Societal Impact</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2025-11-04">04 November 2025</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2026-02-19">19 February 2026</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -163,7 +165,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
                 <a class="u-url" href="https://w3ctag.github.io/societal-impact-questionnaire/">https://w3ctag.github.io/societal-impact-questionnaire/</a>
               </dd>
         <dt>Latest published version:</dt><dd>
-                <a href="https://www.w3.org/societal-impact-questionnaire/">https://www.w3.org/societal-impact-questionnaire/</a>
+                <a href="https://www.w3.org/TR/societal-impact-questionnaire/">https://www.w3.org/TR/societal-impact-questionnaire/</a>
               </dd>
         <dt>Latest editor's draft:</dt><dd><a href="https://w3ctag.github.io/societal-impact-questionnaire/">https://w3ctag.github.io/societal-impact-questionnaire/</a></dd>
         <dt>History:</dt><dd>
@@ -204,7 +206,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="copyright">
     <a href="https://www.w3.org/policies/#copyright">Copyright</a>
     ©
-    2025
+    2026
     
     <a href="https://www.w3.org/">World Wide Web Consortium</a>.
     <abbr title="World Wide Web Consortium">W3C</abbr><sup>®</sup>
@@ -262,7 +264,7 @@ work.</p>
   </p><p>
                       This document is governed by the
                       <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20250818/">18 August 2025 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#intro"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#questions"><bdi class="secno">2. </bdi>Questions to consider</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#critical-part"><bdi class="secno">2.1 </bdi>What kinds of activities do you anticipate your specification becoming a critical part of?</a></li><li class="tocline"><a class="tocxref" href="#unexpected-use"><bdi class="secno">2.2 </bdi>What kinds of activities could your specification become a part of that you are not designing for?</a></li><li class="tocline"><a class="tocxref" href="#misuse"><bdi class="secno">2.3 </bdi>What risks do you see in features of your specification being misused, or used differently from how you intended?</a></li><li class="tocline"><a class="tocxref" href="#opt-out"><bdi class="secno">2.4 </bdi>Can users of the Web Platform choose not to use features of your specification?</a></li><li class="tocline"><a class="tocxref" href="#excluded"><bdi class="secno">2.5 </bdi>What groups of people are excluded from using features of your specification?</a></li><li class="tocline"><a class="tocxref" href="#minority-groups"><bdi class="secno">2.6 </bdi>What effect may features of your specification have on minority groups?</a></li><li class="tocline"><a class="tocxref" href="#power-dynamics"><bdi class="secno">2.7 </bdi>What are the power dynamics at play in implementations of your specification?</a></li><li class="tocline"><a class="tocxref" href="#centralization"><bdi class="secno">2.8 </bdi>What points of centralization does your feature bring to the web platform?</a></li><li class="tocline"><a class="tocxref" href="#surveillance"><bdi class="secno">2.9 </bdi>How does your new technology open up ways in which people might be surveilled?</a></li><li class="tocline"><a class="tocxref" href="#environment"><bdi class="secno">2.10 </bdi>To what extent do the features in your specification impact the natural environment?</a></li><li class="tocline"><a class="tocxref" href="#lifetime"><bdi class="secno">2.11 </bdi>What is the expected lifetime of your specification feature(s)?</a></li><li class="tocline"><a class="tocxref" href="#security-and-privacy"><bdi class="secno">2.12 </bdi>Have you completed the <span class="formerLink">Security &amp; Privacy Self-review Questionnaire</span>?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.1 </bdi>Informative references</a></li></ol></li></ol></nav>
+                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#intro"><bdi class="secno">1. </bdi>Introduction</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#purpose"><bdi class="secno">1.1 </bdi>The purpose of this document</a></li></ol></li><li class="tocline"><a class="tocxref" href="#questions"><bdi class="secno">2. </bdi>Questions to consider</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#critical-part"><bdi class="secno">2.1 </bdi>What kinds of activities do you anticipate your specification becoming a critical part of?</a></li><li class="tocline"><a class="tocxref" href="#unexpected-use"><bdi class="secno">2.2 </bdi>What kinds of activities could your specification become a part of that you are not designing for?</a></li><li class="tocline"><a class="tocxref" href="#misuse"><bdi class="secno">2.3 </bdi>What risks do you see in features of your specification being misused, or used differently from how you intended?</a></li><li class="tocline"><a class="tocxref" href="#opt-out"><bdi class="secno">2.4 </bdi>Can users of the Web Platform choose not to use features of your specification?</a></li><li class="tocline"><a class="tocxref" href="#excluded"><bdi class="secno">2.5 </bdi>What groups of people are excluded from using features of your specification?</a></li><li class="tocline"><a class="tocxref" href="#minority-groups"><bdi class="secno">2.6 </bdi>What effect may features of your specification have on minority groups?</a></li><li class="tocline"><a class="tocxref" href="#power-dynamics"><bdi class="secno">2.7 </bdi>What are the power dynamics at play in implementations of your specification?</a></li><li class="tocline"><a class="tocxref" href="#centralization"><bdi class="secno">2.8 </bdi>What points of centralization does your feature bring to the web platform?</a></li><li class="tocline"><a class="tocxref" href="#surveillance"><bdi class="secno">2.9 </bdi>How does your new technology open up ways in which people might be surveilled?</a></li><li class="tocline"><a class="tocxref" href="#environment"><bdi class="secno">2.10 </bdi>To what extent do the features in your specification impact the natural environment?</a></li><li class="tocline"><a class="tocxref" href="#lifetime"><bdi class="secno">2.11 </bdi>What is the expected lifetime of your specification feature(s)?</a></li><li class="tocline"><a class="tocxref" href="#security-and-privacy"><bdi class="secno">2.12 </bdi>Have you completed the <span class="formerLink">Security &amp; Privacy Self-review Questionnaire</span>?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.1 </bdi>Informative references</a></li></ol></li></ol></nav>
 
 <section id="introduction"><div class="header-wrapper"><h2 id="intro"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#intro" aria-label="Permalink for Section 1."></a></div><p>The web platform has a broad global reach, and is used for a huge variety of
 different purposes. The architecture of the web platform increases in
@@ -270,11 +272,6 @@ complexity with each new feature added, and it is difficult to predict how a
 change in one place may impact other feature designers or end users in
 another. New features, and additions or changes to existing features, should
 bring benefits to end users of the web, and avoid doing harms.</p>
-<p>The questions in this document are to help specification authors as they think
-through the impacts implementations of their features may have, both in the
-immediate scope of their work, as well as more widely. The questions encourage
-the reader to think about perspectives other than their own, as well as to
-think about worst case scenarios.</p>
 <p>Many things are not used in the way their creators intended them, which can be
 very positive or very harmful. Whilst specification authors can't be held
 responsible for every possible future implementation, in contexts which may
@@ -286,10 +283,18 @@ amplifying effect on social phenomena. Technology which provides a threat or a
 benefit to a small number may result in a wider society where the same threat
 or benefit is commonplace, when the technology is available as part of the web
 platform.</p>
+<section id="the-purpose-of-this-document"><div class="header-wrapper"><h3 id="purpose"><bdi class="secno">1.1 </bdi>The purpose of this document</h3><a class="self-link" href="#purpose" aria-label="Permalink for Section 1.1"></a></div><p>This document is not a checklist for specifications. It is not included as 
+part of the horizontal review process and is not intended for specification
+authors to use as acceptance criteria.</p>
+<p>The questions in this document are meant to help specification authors think
+through the impacts that implementations of their features may have, both in the
+immediate scope of their work and more widely. The questions encourage the reader
+to consider perspectives other than their own, as well as to consider worst-case
+scenarios.</p>
 <p>These questions are an accompaniment to the <cite><a data-matched-text="[[[ethical-web-principles]]]" href="https://www.w3.org/TR/ethical-web-principles/">Ethical Web Principles</a></cite>,
 intended to help specification authors and reviewers to think more concretely
 about the ethical implications of particular specification features.</p>
-</section><section id="questions-to-consider"><div class="header-wrapper"><h2 id="questions"><bdi class="secno">2. </bdi>Questions to consider</h2><a class="self-link" href="#questions" aria-label="Permalink for Section 2."></a></div><p>When answering the questions in this document, we encourage you to discuss
+</section></section><section id="questions-to-consider"><div class="header-wrapper"><h2 id="questions"><bdi class="secno">2. </bdi>Questions to consider</h2><a class="self-link" href="#questions" aria-label="Permalink for Section 2."></a></div><p>When answering the questions in this document, we encourage you to discuss
 the data or feedback you are collecting about the impact of your technologies,
 and how you can use this to improve benefits to users or mitigate harms caused.
 Consider what you would measure in order to evaluate the impact your technology
@@ -302,7 +307,7 @@ impact, you are not putting people at risk.</p>
     <a class="self-link" href="#example-measuring">Example<bdi> 1</bdi></a><span class="example-title">: Measuring impact</span>
   </div>
 
-<p>Example: If a local government decides to add separated bicycle lanes and
+<p>If a local government decides to add separated bicycle lanes and
 improved signalling, they should expect increased bicycle use and a reduction in
 collisions involving bicycles. They can measure this by collecting automated,
 non-identified traffic data and by analysing transportation safety statistics,
@@ -337,6 +342,17 @@ the wider ecosystem.</p>
 <p>Next think about possible use cases that may be completely different from the
 problems you set out to solve when designing your feature(s). How does the
 threat model change? What unexpected consequences could arise?</p>
+<aside class="example" id="example-misuse"><div class="marker">
+    <a class="self-link" href="#example-misuse">Example<bdi> 2</bdi></a><span class="example-title">: Misuse</span>
+  </div>
+
+<p>A bad actor could use the <a href="https://www.w3.org/TR/compute-pressure/">Compute Pressure
+API</a> to join web user identities across
+sites. To prevent this, the authors of the spec have included the requirement
+for user agents to minimize data exposure and implement rate obfuscation
+techniques to prevent side-channel information leaks.</p>
+</aside>
+
 </section><section id="can-users-of-the-web-platform-choose-not-to-use-features-of-your-specification"><div class="header-wrapper"><h3 id="opt-out"><bdi class="secno">2.4 </bdi>Can users of the Web Platform choose not to use features of your specification?</h3><a class="self-link" href="#opt-out" aria-label="Permalink for Section 2.4"></a></div><p>What does your specification do from an end-user perspective? What happens if
 the end-user doesn't want that? How easy is it for someone to opt out of these
 features? What might they lose? Are end-users able to give meaningful consent
@@ -349,6 +365,22 @@ taken / are being taken / will need to be taken in the wider ecosystem to
 improve access and inclusivity of these features?</p>
 <p>If certain groups are deliberately excluded from using these features, explain
 why.</p>
+<aside class="example" id="example-exclusion"><div class="marker">
+    <a class="self-link" href="#example-exclusion">Example<bdi> 3</bdi></a><span class="example-title">: Excluded Users</span>
+  </div>
+
+<p>The <a href="https://www.w3.org/TR/webgpu/">Web GPU specification</a>
+provides low-level access to developers, to allow them to render
+high-performance graphics like advanced 3D-rendering.
+The GPU for the Web Community Group, have identified that over
+(half a billion users are unable to access WebGPU rendered objects)[<a href="https://github.com/explainers-by-googlers/webgpu-compatibility-mode/blob/main/README.md#user-facing-problem%5D">https://github.com/explainers-by-googlers/webgpu-compatibility-mode/blob/main/README.md#user-facing-problem]</a> 
+because older devices lack support for modern graphics APIs.
+To address this, the Working Group defined
+the <a href="https://www.w3.org/TR/webgpu/#feature-level-string-compatibility">"compatibility"</a> feature level
+to limit the WebGPU features that are incompatible
+with older devices and graphics APIs.</p>
+</aside>
+
 </section><section id="what-effect-may-features-of-your-specification-have-on-minority-groups"><div class="header-wrapper"><h3 id="minority-groups"><bdi class="secno">2.6 </bdi>What effect may features of your specification have on minority groups?</h3><a class="self-link" href="#minority-groups" aria-label="Permalink for Section 2.6"></a></div><p>Minority (underrepresented) or historically disadvantaged groups may be
 different depending on culture, location, or other context. Think about parts
 of society who may have trouble getting their voice heard, or their needs
@@ -389,10 +421,10 @@ bystanders (people who are not directly using the technology) affected? What
 societal factors might increase the risk of surveillance? Who else might be
 interested in any data you're collecting?</p>
 <aside class="example" id="example-surveillance"><div class="marker">
-    <a class="self-link" href="#example-surveillance">Example<bdi> 2</bdi></a><span class="example-title">: HTTPS and surveillance on the web</span>
+    <a class="self-link" href="#example-surveillance">Example<bdi> 4</bdi></a><span class="example-title">: HTTPS and surveillance on the web</span>
   </div>
 
-<p>Example: before https was widely deployed governments were documented to be
+<p>Before https was widely deployed governments were documented to be
 pervasively monitoring individuals' web usage.</p>
 <p>(Todo: refer to <a href="https://www.w3.org/2014/strint/">https://www.w3.org/2014/strint/</a>)</p>
 </aside>
